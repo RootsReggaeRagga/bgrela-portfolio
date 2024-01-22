@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen w-full flex items-center justify-center">
       <h2 class="animate">
-        <img src="/8.svg" class="w-40">
+        <img src="/5.svg" class="w-100">
       </h2>
     </div>
   </template>

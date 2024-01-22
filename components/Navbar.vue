@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <nav class="navbar">
-    <img src="/8.svg" alt="Azad Furkan ŞAKAR" width="80">
+  <nav class="navbar flex">
+    <img src="/8.svg" alt="Bartłomiej Grela - logo icon" width="100">
     <ul class="navbar-list">
       <li class="navbar-item">
         <NuxtLink to="/" class="navbar-link">
@@ -36,7 +36,10 @@
         </NuxtLink>
       </li>
     </ul>
+    <LangSwitcher />
+    <DarkToggle />
   </nav>
+  
 </template>
 
 <style scoped>

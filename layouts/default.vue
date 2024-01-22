@@ -44,17 +44,17 @@
 
 <template>
   <div>
-    <div class="relative">
+    <div class="relative container mx-auto mt-[20px] md:mt-[50px] dark:text-white text-center max-w-7xl flex">
       <Navbar />
     </div>
-    <main class="relative">
+    <div class="relative container mx-auto mt-[20px] md:mt-[50px] dark:text-white text-center max-w-7xl flex">
       <Sidebar />
       <div class="main-content">
         
         <slot />
       </div>
       <CookieBar />
-    </main>
+    </div>
   </div>
   
 </template>

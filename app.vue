@@ -4,7 +4,7 @@
 //const { locale } = useI18n({ useScope: 'global' })
 //const cookieLocale = useLocaleStore()
 
-//locale.value = cookieLocale.getLocale || 'tr'
+//locale.value = cookieLocale.getLocale || 'pl'
 
 const loadingPage = ref()
 

@@ -10,12 +10,12 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="/5.svg" alt="Azad Furkan ŞAKAR" width="80">
+        <img src="/profile.jpg" alt="Bartłomiej Grela - logo" width="80">
       </figure>
 
       <div class="info-content">
-        <h1 class="name" title="Azad Furkan ŞAKAR">
-          Azad Furkan ŞAKAR
+        <h1 class="name" title="Bartłomiej Grela">
+          Bartłomiej Grela
         </h1>
 
         <p class="title text-center xl:block flex items-center justify-center gap-1">
@@ -45,7 +45,7 @@ function toggleMenu() {
               Email
             </p>
 
-            <a href="mailto:info@afsakar.com" class="contact-link">info@afsakar.com</a>
+            <a href="mailto:bartlomiej.grela@gmail.comm" class="contact-link">bartlomiej.grela@gmail.com</a>
           </div>
         </li>
 
@@ -59,7 +59,7 @@ function toggleMenu() {
               Github
             </p>
 
-            <a href="https://github.com/afsakar" class="contact-link" target="_blank">afsakar</a>
+            <a href="https://github.com/RootsReggaeRagga" class="contact-link" target="_blank">RootsReggaeRagga</a>
           </div>
         </li>
 
@@ -73,7 +73,7 @@ function toggleMenu() {
               Linkedin
             </p>
 
-            <a href="https://tr.linkedin.com/in/afsakar" class="contact-link" target="_blank">Azad Furkan ŞAKAR</a>
+            <a href="https://www.linkedin.com/in/bart%C5%82omiej-grela-2bb215112/" class="contact-link" target="_blank">Bartłomiej Grela</a>
           </div>
         </li>
 
@@ -87,7 +87,7 @@ function toggleMenu() {
               Location
             </p>
 
-            <address>Diyarbakır, Turkey</address>
+            <address>Bielsko-Biała, Poland</address>
           </div>
         </li>
       </ul>
@@ -106,7 +106,6 @@ function toggleMenu() {
             <ion-icon name="logo-instagram" />
           </NuxtLink>
         </li>
-        <LangSwitcher2 />
       </ul>
     </div>
   </aside>

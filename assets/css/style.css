@@ -170,7 +170,7 @@ body { background: var(--smoky-black); }
 article {
   background: 	rgba(0, 0, 0, .2);
   border: 1px solid var(--jet);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 15px;
 
   z-index: 1;
@@ -333,8 +333,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .info-content .name {
@@ -1287,7 +1286,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar, article {
     width: 520px;
-    margin-inline: auto;
+
     padding: 30px;
   }
 
@@ -1799,13 +1798,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 25px;
   }
 
   .main-content {
     min-width: 75%;
     width: 75%;
     margin: 0;
+    background:hsl(111, 9%, 16%);
+    color:#fff;
+    border-radius:12px;
+    padding:30px;
+    margin-left:20px;
+    margin-bottom:50px;
   }
 
 
@@ -1816,17 +1820,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 50px;
     max-height: 50rem;
     height: 100%;
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    border:0;
   }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 200px; }
 
   .info-content .name {
     white-space: nowrap;
@@ -1870,4 +1875,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+.avatar-box img{
+  border-radius:50%;
 }

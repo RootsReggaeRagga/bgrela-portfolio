@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['~/assets/css/style.css', '~/assets/css/navbar.css'],
 
   app: {
     head: {
@@ -13,5 +14,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    vueI18n: './i18n.config.ts' // if you are using custom path, default 
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
 })

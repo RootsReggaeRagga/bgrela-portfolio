@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen w-full flex items-center justify-center">
       <h2 class="animate">
-        <img src="/5.svg" class="w-100">
+        <img src="/logo_preloader.svg" class="w-100">
       </h2>
     </div>
   </template>
@@ -28,7 +28,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      height: 100vh;
       margin: auto;
       /* width: 350px; */
       /* font-size:26px; */

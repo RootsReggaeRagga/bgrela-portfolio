@@ -1,0 +1,15 @@
+.bg-cookie-bar{
+    background:$bg;
+    border-radius: $border-radius-small;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, .15);
+    color:#fff;
+    min-width:250px;
+  }
+  .cookie-bar__close{
+    background:rgba(0,0,0,0.17);
+    border-radius:6px;
+    color:#fff;
+  }
+  .cookie-bar__close:hover{
+    color: var(--vegas-gold)
+  }

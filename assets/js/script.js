@@ -6,7 +6,7 @@ const sidebar = document.querySelector('[data-sidebar]')
 const sidebarBtn = document.querySelector('[data-sidebar-btn]')
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener('click', () => { elementToggleFunc(sidebar) })>
+sidebarBtn.addEventListener('click', () => { elementToggleFunc(sidebar) })
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll('[data-testimonials-item]')

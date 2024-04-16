@@ -4,7 +4,8 @@
 
 .navbar {
     width: 100%;
-    background: 	hsl(111, 9%, 16%);
+    /* background: 	hsl(111, 9%, 16%); */
+    background: 	rgba(0,0,0,0.17);
     backdrop-filter: blur(10px);
     border-radius:12px;
     z-index: 5;

@@ -1,0 +1,100 @@
+$border-radius-big: 50%;
+$border-radius-medium: 12px;
+$border-radius-small: 6px;
+
+$neomorph-dark: 9.91px 9.91px 15px #232822, -9.91px -9.91px 15px #293028;
+$neomorph-light: inset 9.91px 9.91px 15px #2B322A, inset -9.91px -9.91px 15px #333C32;
+
+
+$bx-shadow: 4px 4px 4px 0px rgba(0, 0, 0, .15);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+}
+
+.h2,
+.h3,
+.h4,
+.h5 {
+  color: var(--white-2);
+}
+
+.h2 { font-size: var(--fs-1); }
+
+.h3 { font-size: var(--fs-2); }
+
+.h4 { font-size: var(--fs-4); }
+
+.h5 {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+
+html {
+    &.light{
+      background:#ffffff;
+      .bg-navbar, .bg-sidebar, .bg-content, .bg-cookie-bar{
+        background: rgba(0,0,0, 0.05);
+        color:#25b26e;
+      }
+      h1, h2, h3, h4, h5, h6, p {
+        color:#000;
+      }
+      .bg-icon-box, .technologies__list-item, .bg-info__avatar-box img{
+        background: rgba(255,255,255, 1);
+        color:#25b26e;
+        box-shadow: none;
+      }
+      .bg-icon-box a{
+        color:#25b26e;
+      }
+      .service-item, .bg-info__content-title { 
+        background: rgba(255,255,255, 1);
+        box-shadow: none;
+      }
+      a, a.router-link-active {
+        color: rgb(47, 55, 46)
+      }
+
+      a.router-link-active {
+        color: #25b26e
+      }
+      .timeline-item:not(:last-child)::before{
+        background: #25b26e
+      }
+      .timeline-item::after{
+        box-shadow: 0 0 0 4px #25b26e;
+        background:#fff;
+      }
+      .timeline-list span{
+        color: #25b26e
+      }
+      .article-title::after {
+        background: #25b26e
+      }
+
+      .service-item {
+        ion-icon {
+          color:#25b26e
+        }
+      }
+      .separator { 
+        background: rgba(0,0,0, 0.05);
+      }
+      .bg-contact-info a {
+        color:#25b26e
+      }
+      .bg-cookie-bar{
+        background:#f2f2f2
+      }
+    }
+    &.dark{
+      background: $bg; 
+      
+    }
+  }

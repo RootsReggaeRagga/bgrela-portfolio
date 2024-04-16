@@ -1,25 +1,94 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+useHead({
+})
+
+onMounted(() => {
+  useLocaleStore()
+})
+
+const { locale } = useI18n({ useScope: 'global' })
+
+/* Services */
+const { data: services } = await useFetch('/api/services')
+</script>
+
 <template>
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet nibh nec massa faucibus fringilla. Aliquam vel nisl facilisis, posuere turpis id, consectetur erat. Curabitur non maximus ligula. Duis posuere sit amet tortor a volutpat. Suspendisse mattis lobortis efficitur. Praesent ultrices scelerisque ante vitae faucibus. Nulla convallis massa in leo pretium, non interdum odio pretium. Phasellus at ex elit.
+  <article class="about active" data-page="about">
+    <header>
+      <h2 class="h2 article-title">
+        {{ $t('pageTitles.about') }}
+      </h2>
+    </header>
 
-Ut sagittis lectus id sapien cursus, nec fermentum nisl tincidunt. Sed venenatis vitae libero nec efficitur. Curabitur sem urna, fermentum a porttitor nec, efficitur nec eros. Vestibulum porttitor eros nulla, quis mollis diam aliquam in. Sed rutrum sem diam, nec interdum ligula semper euismod. Suspendisse vulputate diam elit, a efficitur augue convallis in. Nullam sit amet ligula nec nibh egestas suscipit. Sed suscipit magna vitae erat dapibus rutrum vitae euismod metus. Sed nunc tortor, pellentesque fringilla commodo sed, ultrices eget nulla. Maecenas porttitor nisi elit, eu fermentum purus fringilla a. Sed eu pellentesque sapien, in volutpat ante. Nunc gravida est nec consectetur consectetur. Phasellus at sapien at urna lobortis tristique. Vestibulum imperdiet porta diam, vel suscipit ligula dictum quis. Nunc ullamcorper dapibus dui, eu egestas arcu faucibus eu.
+    <section class="about-text">
+      <p>
+        {{ $t('home.welcome') }}
+      </p>
 
-Aliquam ut est efficitur, feugiat lectus fringilla, aliquam dolor. Nam non tellus tincidunt, accumsan justo sed, viverra neque. Nam scelerisque purus id scelerisque viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis dapibus mauris. Praesent accumsan ut magna nec varius. Quisque viverra purus ut vulputate pulvinar. Mauris suscipit tortor nisi, in congue elit efficitur ut. Sed convallis sapien nec mollis elementum. In consequat congue metus vitae pulvinar. Aenean lacinia cursus felis, sed mollis nunc molestie pulvinar. Nullam molestie molestie accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id velit arcu. Nunc risus nunc, lacinia vitae enim a, venenatis iaculis turpis.
+      <p>
+        {{ $t('home.description') }}
+      </p>
 
-Fusce id libero sed nulla malesuada eleifend eu ac risus. Nulla placerat laoreet rutrum. Suspendisse potenti. Praesent bibendum augue et lacus ullamcorper, a fermentum elit convallis. Maecenas ut neque et tellus sagittis venenatis id at leo. Vestibulum semper dolor sit amet ullamcorper suscipit. Aliquam mollis faucibus neque, at fringilla urna dictum imperdiet.
+      <p>
+        {{ $t('home.description2') }}
+      </p>
 
-Donec posuere tortor non sem sodales iaculis. Praesent egestas mattis pharetra. Nunc imperdiet lacus urna. Praesent consectetur risus libero, quis consequat lacus efficitur vitae. Nunc tempus hendrerit dignissim. Duis sed libero eget elit ultrices pulvinar nec in turpis. Morbi sed venenatis purus. In dictum tristique imperdiet. Donec ullamcorper et mi nec vehicula. Praesent ac tellus malesuada, fermentum est et, pharetra mauris. Sed nec urna sodales, lobortis diam sit amet, faucibus lacus. Aliquam accumsan consectetur purus eget tempus. Cras molestie commodo tellus a laoreet. Nullam consequat id urna nec dictum. Cras a luctus tellus. Mauris tristique laoreet vulputate.
+      <p>
+        {{ $t('home.description3') }}
+      </p>
+      
+      <p>
+        {{ $t('home.description4') }}
+      </p>
 
-Integer fringilla nibh ligula, ac convallis turpis accumsan vel. Morbi a ante ut enim commodo efficitur. Phasellus elit lacus, tincidunt vitae volutpat vel, facilisis id tortor. Cras ultricies quis purus ut rhoncus. Vestibulum eget malesuada tellus. Quisque neque lacus, vulputate quis enim quis, rutrum faucibus nulla. Integer eget dapibus nibh. Morbi aliquet mollis nulla, eu feugiat eros pulvinar vel. Mauris id orci vel arcu blandit varius.
+      <p>
+        {{ $t('home.description-more') }}
+        <a href="https://www.linkedin.com/in/bart%C5%82omiej-grela-2bb215112/" class="contact-link" target="_blank">Bartłomiej Grela</a>
+      </p>
+    </section>
 
-Ut tincidunt bibendum magna, at dignissim eros efficitur vel. Quisque in eros quis leo placerat convallis ut id tortor. Aenean tempus vitae erat et luctus. Pellentesque vel fringilla turpis. Ut fermentum hendrerit semper. Donec vestibulum, dui vel aliquam dignissim, libero ex fringilla orci, eu porta arcu dolor nec mi. Vestibulum nec eros eros. Vestibulum et volutpat nulla, et mattis sapien. Ut luctus rhoncus molestie. Nunc vel diam eget diam luctus semper.
+    <div class="separator"></div>
 
-Cras porta dapibus porta. Cras eleifend tortor ac volutpat consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ullamcorper maximus ligula, sed varius turpis blandit ut. Mauris ac risus auctor dui lacinia euismod id ac risus. Fusce in egestas felis. Phasellus volutpat tellus sapien, viverra dapibus metus lobortis eu. Vestibulum et molestie nulla, nec congue libero.
+    <!-- service -->
 
-Donec a facilisis neque. Suspendisse quis tortor ac augue feugiat congue. Mauris volutpat massa a gravida posuere. Nam nec consectetur dolor. Curabitur felis mauris, pretium in odio quis, sodales fringilla nunc. Aliquam erat volutpat. Praesent fringilla vehicula dolor vitae laoreet. Etiam turpis risus, facilisis ut nisl sed, dapibus auctor arcu. Nunc et commodo nunc, at iaculis libero.
+    <section class="service my-10">
+      <h3 class="h3 service-title">
+        {{ $t('home.headingWork') }}
+      </h3>
 
-Pellentesque finibus elit vitae semper lobortis. Nullam imperdiet nibh nisl, in molestie nisl fringilla at. Cras non mi pharetra, suscipit est a, aliquam elit. Nullam sed elementum tortor. Duis fringilla, turpis eu condimentum finibus, metus nisl blandit lectus, mattis tristique turpis ipsum at nunc. Integer vitae ligula at ante pharetra convallis ut a urna. Etiam eleifend ligula a augue facilisis, nec volutpat quam vestibulum. Fusce a urna lectus. Etiam vel consequat sem, a faucibus est.
-        </p>
-    </div>
+      <ul class="service-list">
+        <ServiceItem v-for="service in services" :key="service.id" :service="service" />
+      </ul>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- technologies -->
+
+    <section class="technologies my-10">
+      <h3 class="h3 service-title">
+        {{ $t('home.headingTechnologies') }}
+      </h3>
+
+      <ul class="technologies__list flex flex-wrap gap-3 justify-center">
+        <li class="technologies__list-item">Javascript</li>
+        <li class="technologies__list-item">Typescript</li>
+        <li class="technologies__list-item">Scala</li>
+        <li class="technologies__list-item">Angular</li>
+        <li class="technologies__list-item">Vue</li>
+        <li class="technologies__list-item">Nuxt</li>
+        <li class="technologies__list-item">Wordpress</li>
+        <li class="technologies__list-item">Woocommerce</li>
+        <li class="technologies__list-item">PHP</li>
+        <li class="technologies__list-item">Postgresql</li>
+        <li class="technologies__list-item">Postman</li>
+        <li class="technologies__list-item">Scrum</li>
+        <li class="technologies__list-item">Boostrap</li>
+        <li class="technologies__list-item">Tailwindcss</li>
+      </ul>
+
+    </section>
+  </article>
 </template>

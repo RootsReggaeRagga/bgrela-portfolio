@@ -87,7 +87,7 @@ const center = [49.8222701, 19.0343083]
     >
       <LTileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="&amp;copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors"
+        attribution=""
         layer-type="base"
         name="OpenStreetMap"
       />

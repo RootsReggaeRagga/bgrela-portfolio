@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
   css: [
     '~/assets/scss/main.scss',
@@ -15,27 +16,19 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@vueuse/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
-    'nuxt3-leaflet'
+    'nuxt3-leaflet',
   ],
+  
 
   i18n: {
     vueI18n: './i18n.config.ts' // if you are using custom path, default 
   },
 
-  hooks: {
-    'vite:extendConfig': function (config: any, { isServer }: any) {
-      if (isServer) {
-        // Workaround for netlify issue
-        // https://github.com/nuxt/framework/issues/6204
-        config.build.rollupOptions.output.inlineDynamicImports = true
-      }
-    },
-  },
-  
 
   tailwindcss: {
     exposeConfig: true,
@@ -52,7 +45,13 @@ export default defineNuxtConfig({
   ],
 
   build: {
-    transpile: ['pinia-orm'],
+    transpile: ['pinia'],
   },
+
+  // router: {
+  //   options: {
+  //     strict: true,
+  //   },
+  // },
 
 })

@@ -1,12 +1,16 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useLocaleStore } from './composables/locale'
-const { locale } = useI18n({ useScope: 'global' })
-const cookieLocale = useLocaleStore()
+import { useCookieStore } from './composables/cookie'
+const { locale } = useI18n({ useScope: 'global' });
 
-locale.value = cookieLocale.getLocale || 'pl'
+const cookieLocale = useLocaleStore();
+const cookie = useCookieStore()
 
-const loadingPage = ref()
+
+locale.value = cookieLocale.getLocale || 'en';
+
+const loadingPage = ref();
 
 
 onBeforeMount(() => {
@@ -14,9 +18,20 @@ onBeforeMount(() => {
 })
 
 onMounted(() => {
+  useCookieStore()
   setTimeout(() => {
     loadingPage.value = false
   }, 1000)
+})
+useSeoMeta({
+  ogTitle: "Bartłomiej Grela - Software Developer • Engineer • Programmer",
+  ogDescription: "",
+  ogImage: "logo_preloader.svg",
+  ogUrl: "https://bgrela.dev/",
+  twitterTitle: "Bartłomiej Grela - Software Developer • Engineer • Programmer",
+  twitterDescription: "",
+  twitterImage: "logo_preloader.svg",
+  twitterCard: "summary"
 })
 
 </script>

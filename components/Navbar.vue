@@ -6,7 +6,7 @@ const color = useColorMode()
 </script>
 
 <template>
-  <nav class="bg-navbar w-100 px-5 grid grid-cols-6">
+  <nav class="bg-navbar w-100 px-5 grid grid-cols-6 mx-0 md:mx-6">
     <div class="my-5 col-span-1 bg-navbar__logo">
       <a href="/">
       <span v-if="color.value == 'dark'">
@@ -38,7 +38,7 @@ const color = useColorMode()
       </li>
     </ul>
 
-    <div class="flex flex-col md:flex-row gap-4 col-span-1 md:justify-end">
+    <div class="flex flex-col md:flex-row gap-4 col-span-1 md:justify-end my-5">
       <LangSwitcher />
       <DarkToggle />
     </div>

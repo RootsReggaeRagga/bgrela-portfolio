@@ -13,7 +13,7 @@ const { locale } = useI18n({ useScope: 'global' })
 </script>
 
 <template>
-  <li class="service-item flex items-center justify-center">
+  <li class="service-item flex items-center justify-center flex-col lg:flex-row">
     <div class="service-icon-box">
       <img v-if="service.image !== null && service.icon !== ''" :src="service.image" alt="mobile app icon" class="w-40">
       <ion-icon v-else :name="service.icon" class=" text-[3rem] mx-auto" style="width: 40px" />

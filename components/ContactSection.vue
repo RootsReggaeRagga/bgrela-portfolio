@@ -14,7 +14,7 @@
                 Email
               </p>
   
-              <a href="mailto:bartlomiej.grela@gmail.comm" class="contact-link">bartlomiej.grela@gmail.com</a>
+              <a href="mailto:bartlomiej.grela@gmail.com" class="contact-link">bartlomiej.grela@gmail.com</a>
             </div>
           </li>
 

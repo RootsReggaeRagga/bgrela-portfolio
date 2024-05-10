@@ -44,18 +44,18 @@ useHead({
 
 <template>
   <div>
-    <div class="container mx-auto max-w-7xl my-6 md:my-6">
-      <Navbar class="mx-6 lg:mx-[3]"/>
+    <div class="container mx-auto max-w-7xl mb-6">
+      <Navbar class="mx-0 lf:mx-6 lg:mx-[3]"/>
     </div>
       
     <div class="container mx-auto max-w-7xl">
       <div class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10">
-        <div class="col-span-3 md:col-span-3 lg:col-span-3 mb-3 md:mb-0 mx-6 md:mx-6 lg:mx-[3]">
+        <div class="col-span-3 md:col-span-3 lg:col-span-3 mb-3 md:mb-0 mx-0 md:mx-6 lg:mx-[3] order-2 md:order-1 mt-6 md:mt-0">
           <Sidebar />
         </div>
         
 
-        <div class="col-span-3 md:col-span-4 lg:col-span-7 dark:text-dark mt-4 mx-6 md:mr-6 md:mx-0 lg:mx-[3] md:mt-0 text-center bg-content">
+        <div class="col-span-3 md:col-span-4 lg:col-span-7 dark:text-dark mt-0 mx-0 md:mr-6 md:mx-0 lg:mx-[3] md:mt-0 text-center bg-content order-1 md:order-2">
           <slot />
         </div>
       

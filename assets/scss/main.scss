@@ -550,7 +550,7 @@ main {
  * responsive larger than 580px screen
  */
 
-@media (min-width: 580px) {
+@media (min-width: 960px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1076,4 +1076,10 @@ main {
 .map-container{
   width:100%;height:100%;
   border-radius: $border-radius-medium;
+}
+
+@media (max-width:960px){
+.bg-content{
+  
+}
 }

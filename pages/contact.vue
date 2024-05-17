@@ -50,7 +50,7 @@ const center = [49.8222701, 19.0343083]
           </div>
         </li>
 
-        <li class="bg-info-more__contacts-list-item service-item">
+        <!-- <li class="bg-info-more__contacts-list-item service-item">
           <div class="bg-icon-box">
             <ion-icon name="logo-github" />
           </div>
@@ -62,7 +62,7 @@ const center = [49.8222701, 19.0343083]
 
             <a href="https://github.com/RootsReggaeRagga" class="contact-link" target="_blank">RootsReggaeRagga</a>
           </div>
-        </li>
+        </li> -->
 
         <li class="bg-info-more__contacts-list-item service-item">
           <div class="bg-icon-box">

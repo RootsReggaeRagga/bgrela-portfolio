@@ -32,7 +32,7 @@
             </div>
           </li>
   
-          <li class="bg-info-more__contacts-list-item">
+          <!-- <li class="bg-info-more__contacts-list-item">
             <div class="bg-icon-box">
               <ion-icon name="logo-github" />
             </div>
@@ -44,7 +44,7 @@
   
               <a href="https://github.com/RootsReggaeRagga" class="contact-link" target="_blank">RootsReggaeRagga</a>
             </div>
-          </li>
+          </li> -->
   
           <li class="bg-info-more__contacts-list-item">
             <div class="bg-icon-box">

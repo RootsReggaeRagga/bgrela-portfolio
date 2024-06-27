@@ -29,7 +29,17 @@ export default defineI18nConfig(() => ({
             "langs": "Languages & technologies",
             "frameworks": "Frameworks & libraries",
             "others": "Others",
-            "perks": "Additional Perks"
+            "perks": "Additional Perks",
+            "perk" : {
+              "one": "Driving License (cat. B)",
+              "two": "Ability to work in a group",
+              "three": "Honesty",
+              "four": "Loyalty",
+              "five": "Punctuality",
+              "six": "Diligence and attention to details",
+              "seven": "Communicative",
+              "eight": "English language (B1/B2)"
+            }
           }
         },
         "portfolio": {
@@ -79,7 +89,17 @@ export default defineI18nConfig(() => ({
             "langs": "Języki & technologie",
             "frameworks": "Frameworki & biblioteki",
             "others": "Pozostałe",
-            "perks": "Dodatkowe umiejętności"
+            "perks": "Dodatkowe umiejętności",
+            "perk" : {
+              "one": "Prawo jazdy (kat. B)",
+              "two": "Umiejętność pracy w grupie",
+              "three": "Szczerość",
+              "four": "Lojalność",
+              "five": "Punktualność",
+              "six": "Dbałość o szczegóły",
+              "seven": "Komunikacja",
+              "eight": "Język angielski (B1/B2)",
+            }
           }
         },
         "portfolio": {

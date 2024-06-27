@@ -10,7 +10,7 @@ onMounted(() => {
 
 <template>
   <Transition name="bounce">
-    <div v-show="!cookie.getCookie" class="bg-cookie-bar container left-0 right-0 mx-auto child md:w-[20%] shadow-xl px-6 py-3 bottom-20 fixed z-[1000] flex items-center justify-between animate-bounce">
+    <div v-show="!cookie.getCookie" class="bg-cookie-bar container left-0 right-0 mx-auto child md:w-[20%] shadow-xl px-6 py-3 bottom-5 fixed z-[1000] flex items-center justify-between animate-bounce">
       <span>{{ $t('cookies.text') }} 🍪</span>
       <span class="cursor-pointer p-2 cookie-bar__close" @click="cookie.setCookie()">
         <ion-icon name="close-outline" />

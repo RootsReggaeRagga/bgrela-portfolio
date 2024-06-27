@@ -22,9 +22,9 @@ function changeLang() {
 </script>
 
 <template>
-  <div class="cursor-pointer transition-all fade h-100 flex items-center justify-between" @click="changeLang()" title="switch language">
+  <div class="cursor-pointer transition-all fade h-100 flex items-center justify-between bg-lang-switcher" @click="changeLang()" title="switch language">
     <!-- <img :src="`/${locale}.png`" class="w-9"> -->
-    <span class="bg-icon-box text-uppercase">
+    <span class="bg-icon-box">
       <img :src="`/${locale}.png`" class="w-4">
     </span>
   </div>

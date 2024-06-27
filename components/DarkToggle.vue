@@ -10,7 +10,7 @@ const themeColor = computed(() => {
 </script>
 
 <template>
-  <div class="cursor-pointer transition-all fade h-100 flex items-center justify-between">
+  <div class="cursor-pointer transition-all fade h-100 flex items-center justify-between bg-color-switcher">
     <Button class="bg-icon-box" @click="toggleDark">
       
       <ion-icon :name="themeColor === 'dark' ? 'sunny-outline' : 'moon-outline'" size=""/>

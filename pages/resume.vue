@@ -213,6 +213,31 @@ const experiances = [
             <li class="technologies__list-item">GraphQL</li>
             <li class="technologies__list-item">AWD</li>
             <li class="technologies__list-item">Scrum</li>
+            <li class="technologies__list-item">jQuery</li>
+            <li class="technologies__list-item">Bower</li>
+            <li class="technologies__list-item">Composer</li>
+            <li class="technologies__list-item">AJAX</li>
+            <li class="technologies__list-item">Photoshop</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="separator" />
+
+      <div class="grid grid-cols-1 mb-6">
+        <div class="col-span-1">
+          <h3 class="h3 skills-title">
+            {{ $t('resume.skills.perks') }}
+          </h3>
+          <ul class="technologies__list flex flex-wrap gap-3 justify-center">
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.one') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.two') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.three') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.four') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.five') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.six') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.seven') }}</li>
+            <li class="technologies__list-item">{{ $t('resume.skills.perk.eight') }}</li>
           </ul>
         </div>
       </div>

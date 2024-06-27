@@ -3,7 +3,13 @@
     border-radius: $border-radius-small;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, .15);
     color:#fff;
-    min-width:300px;
+    max-width:calc(100% - 60px);
+    margin:0 30px;
+    @media (min-width: 768px) {
+      min-width:300px;
+      margin:0 auto;
+    }
+
   }
   .cookie-bar__close{
     background:rgba(0,0,0,0.17);

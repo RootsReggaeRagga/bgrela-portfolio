@@ -23,7 +23,7 @@ const center = [49.8222701, 19.0343083]
       <div class="separator" />
       <ul class="bg-info-more__contacts-list service-list">
         <li class="bg-info-more__contacts-list-item service-item">
-          <div class="bg-icon-box">
+          <div class="bg-icon-box bg-icon-box--dark">
             <ion-icon name="mail-outline" />
           </div>
 
@@ -37,7 +37,7 @@ const center = [49.8222701, 19.0343083]
         </li>
 
         <li class="bg-info-more__contacts-list-item service-item">
-          <div class="bg-icon-box">
+          <div class="bg-icon-box bg-icon-box--dark">
             <ion-icon name="call-outline" />
           </div>
 
@@ -65,7 +65,7 @@ const center = [49.8222701, 19.0343083]
         </li> -->
 
         <li class="bg-info-more__contacts-list-item service-item">
-          <div class="bg-icon-box">
+          <div class="bg-icon-box bg-icon-box--dark">
             <ion-icon name="logo-linkedin" />
           </div>
 
@@ -74,25 +74,17 @@ const center = [49.8222701, 19.0343083]
               Linkedin
             </p>
 
-            <a href="https://www.linkedin.com/in/bart%C5%82omiej-grela-2bb215112/" class="contact-link" target="_blank">Bartłomiej Grela</a>
+            <a href="https://www.linkedin.com/in/bart%C5%82omiej-grela-2bb215112/" class="contact-link"
+              target="_blank">Bartłomiej Grela</a>
           </div>
-          </li>
+        </li>
       </ul>
       <div style="height:350px; width:100%" class="my-6 ">
-      <LMap
-      class="map-container"
-      ref="map"
-      :zoom="zoom"
-      :center="center"
-    >
-      <LTileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution=""
-        layer-type="base"
-        name="OpenStreetMap"
-      />
-    </LMap>
-    </div>
+        <LMap class="map-container" ref="map" :zoom="zoom" :center="center">
+          <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="" layer-type="base"
+            name="OpenStreetMap" />
+        </LMap>
+      </div>
     </div>
 
   </article>
